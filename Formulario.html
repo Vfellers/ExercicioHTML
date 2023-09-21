@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculo</title>
+</head>
+<body>
+    <h1>CURRÍCULO</h1>
+
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label for="nome">Nome Completo</label required>
+            <input type="text" name="nome" id="nome">
+            <br><br>
+
+            <label for="cpf">CPF</label>
+            <input type="text" name="cpf" id="cpf">
+            <br><br>
+
+            <label for="nacionalidade">Nacionalidade</label>
+            <input type="text" name="nacionalidade" id="nacionalidade">
+            <br><br>
+
+            <label for="nascimento">Data de Nascimento</label>
+            <input type="date" name="nascimento" id="nascimento">
+
+            <br><br>
+            
+            <label for="sexo">Sexo</label>
+            <select name="sexo" id="sexo" required>
+                <option value="">Selecione seu gênero</option>
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+
+            <input type="text" name="pais" id="pais" placeholder="Pais">
+            <br>
+            <input type="text" name="estado" id="estado" placeholder="Estado">
+            <br>
+            <input type="text" name="cidade" id="cidade" placeholder="Cidade">
+            <br>
+            <input type="text" name="bairro" id="bairro" placeholder="Bairro">
+            <br>
+            <input type="text" name="rua" id="rua" placeholder="Rua">
+            <br>
+            <input type="number" name="numero" id="numero" placeholder="Número">
+        </fieldset>
+
+        <fieldset>
+            <legend>Contato</legend>
+
+            <input type="tel" name="telefone" id="telefone" placeholder="Telefone">
+            <br>
+            <input type="email" name="email" id="email" placeholder="E-mail">
+            <br>
+            <input type="text" name="linkedin" id="linkedin" placeholder="Linked in">
+        </fieldset>
+
+        <fieldset>
+            <legend>Objetivo</legend>
+            <label for="objetivos">Quais seus objetivos?</label>
+            <br>
+            <textarea name="objetivos" id="objetivos" cols="30" rows="10" placeholder="Meu objetivo é..."></textarea>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Formação acadêmica</legend>
+
+            <input type="checkbox" name="formaçao[]" id="fundamental" value="fundamental">
+            <label for="fundamental">Ensino fundamental</label>
+            <input type="text" name="fundamental" id="fundamental" placeholder="Escola">
+            <br>
+            <input type="checkbox" name="formaçao[]" id="medio" value="medio">
+            <label for="medio">Ensino médio</label>
+            <input type="text" name="medio" id="medio" placeholder="Escola">
+            <br>
+            <input type="checkbox" name="formaçao[]" id="superior" value="superior">
+            <label for="superior">Ensino Superior</label>
+            <input type="text" name="superior" id="superior" placeholder="Instituição">
+            <br>
+            <input type="checkbox" name="formaçao[]" id="pos" value="pos">
+            <label for="pos">Pós Graduação</label>
+            <input type="text" name="pos" id="pos" placeholder="Instituição">
+            <br>
+            <input type="checkbox" name="formaçao[]" id="mestrado" value="mestrado">
+            <label for="mestrado">Mestrado</label>
+            <input type="text" name="mestrado" id="mestrado" placeholder="Instituição">
+            <br>
+            <input type="checkbox" name="formaçao[]" id="doutorado" value="doutorado">
+            <label for="doutorado">Doutorado</label>
+            <input type="text" name="doutorado" id="doutorado" placeholder="Instituição">
+        </fieldset>
+
+        <fieldset>
+            <legend>Outros cursos</legend>
+            <label for="mestrado">Curso</label>
+            <input type="text" name="curso" id="curso" placeholder="Curso">
+            <input type="text" name="inst" id="inst" placeholder="Instituição">
+        </fieldset>
+
+        <fieldset>
+            <legend>Experiências profissionais</legend>
+            <label for="empresa1">Empresa 1</label> <br>
+            <input type="text" name="empresa" id="empresa" placeholder="Empresa"><br>
+            <input type="text" name="cargo" id="cargo" placeholder="Cargo"><br>
+            <label for="admissao">Início: </label>
+            <input type="date"><br>
+            <label for="demissao">Fim: </label>
+            <input type="date"><br>
+            <label for="funcoes">Funções</label><br>
+            <textarea name="funcoes" id="funcoes" cols="30" rows="10" placeholder="Minha função na empresa 1 abrangia..."></textarea>
+
+            <br><br>
+
+            <label for="empresa2">Empresa 2</label> <br>
+            <input type="text" name="empresa" id="empresa" placeholder="Empresa"><br>
+            <input type="text" name="cargo" id="cargo" placeholder="Cargo"><br>
+            <label for="admissao">Início: </label>
+            <input type="date"><br>
+            <label for="demissao">Fim: </label>
+            <input type="date"><br>
+            <label for="funcoes">Funções</label><br>
+            <textarea name="funcoes" id="funcoes" cols="30" rows="10" placeholder="Minha função na empresa 2 abrangia..."></textarea>
+
+            <br><br>
+
+            <label for="empresa3">Empresa 3</label> <br>
+            <input type="text" name="empresa" id="empresa" placeholder="Empresa"><br>
+            <input type="text" name="cargo" id="cargo" placeholder="Cargo"><br>
+            <label for="admissao">Início: </label>
+            <input type="date"><br>
+            <label for="demissao">Fim: </label>
+            <input type="date"><br>
+            <label for="funcoes">Funções</label><br>
+            <textarea name="funcoes" id="funcoes" cols="30" rows="10" placeholder="Minha função na empresa 3 abrangia..."></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informações adicionais</legend>
+            <label for="adicionais">Algo mais que deveríamos saber sobre você?</label>
+            <br>
+            <textarea name="adicionais" id="adicionais" cols="30" rows="10" placeholder="Habilitação, disponibilidade de horário ou viagem, trabalho voluntário..."></textarea>
+        </fieldset>
+
+
+
+    </form>
+    
+</body>
+</html>
